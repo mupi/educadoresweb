@@ -40,10 +40,11 @@ home
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2 text-center">
-                        <h1 class="home-title">Formação continuada de professores</h1>
+                        <h1 class="home-title">Google For Education</h1>
                         <p class="lead">
-                          Atualize-se, reconecte-se e dedique-se a você.
-                          Venha analisar, refletir e compartilhar suas práticas de sala de aula. </p>
+                          Atualize-se, reconecte-se e aprenda a utilizar as principais ferramentas
+			  do Google para enriquecer suas práticas de sala de aula.
+                        </p>
                         <p>
                             <a href="{% url 'courses' %}" class="btn btn-success text-uppercase">Conheça nossos cursos</a>
                         </p>
@@ -137,57 +138,6 @@ home
         <section id="how-it-works">
             <div class="container">
 
-                {% if in_admin %}
-                <header>
-                    {% verbatim %}
-                    <h1 ng-hide="!bottom_home_flatpages.$resolved">Curso online: Tecnologia para Sala de Aula</h1>
-                    {% endverbatim %}
-                </header>
-                <div class="highlight textcenter">
-                    <div class="col-lg-12" ng-hide="bottom_home_flatpages.$resolved">
-                        <i class="loading fa fa-refresh fa-spin"></i>
-                    </div>
-                    <modalmarkdowneditorwithtitle tabindex="2"
-                                                  on-save="save_home_text(home_bottom_intro)"
-                                                  title-model="home_bottom_intro.title"
-                                                  content="home_bottom_intro.content"
-                                                  ng-hide="!bottom_home_flatpages.$resolved">
-                    </modalmarkdowneditorwithtitle>
-                </div>
-                {% endif %}
-
-                <div class="highlight textcenter">
-                    <div class="row midia">
-                        <div class="col-md-2">
-                          <h4 class="title_midia">Saiu na mídia</h4>
-                        </div>
-                        <div class="col-md-3">
-                          <a href="http://porvir.org/porfazer/curso-ensina-como-usar-ferramentas-virtuais-para-educadores" target="_blank">
-                            <img src="{% static 'img/logo_porvir.png' %}" class="img-responsive">
-                          </a>
-                        </div>
-                        <div class="col-md-1 logo-novaescola">
-                          <a href="https://www.youtube.com/watch?v=67byn7rxG-s&t=249" target="_blank">
-                            <img src="{% static 'img/logo_nova_escola.png' %}" class="img-responsive">
-                          </a>
-                        </div>
-                        <div class="col-md-2 logo-novaescola">
-                          <a href="http://rescola.com.br/curso-ensina-educadores-a-utilizar-ferramentas-gratuitas-da-web-na-sala-de-aula" target="_blank">
-                            <img src="{% static 'img/logorescola.png' %}" class="img-responsive">
-                          </a>
-                        </div>
-                        <div class="col-md-2 logo-novaescola">
-                          <a href="http://www.inova.unicamp.br/noticia/3413" target="_blank">
-                            <img src="{% static 'img/logo_inova.png' %}" class="img-responsive">
-                          </a>
-                        </div>
-                        <div class="col-md-2 logo-inova">
-                          <a href="http://www.arede.inf.br/parabens-vencedores-do-premio-arede-educa-2016/" target="_blank">
-                            <img src="{% static 'img/arede.png' %}" class="img-responsive">
-                          </a>
-                        </div>
-                    </div>
-                </div>
 
                 <div id="carousel-testimonials" class="carousel slide carousel-home" data-ride="carousel" data-interval="false">
 
@@ -195,56 +145,6 @@ home
                   <div class="carousel-inner" role="listbox">
 
                     <div class="item active">
-                        <blockquote class="testimonial">
-                            <p>
-                              <i class="fa fa-quote-left"></i>
-                              Sempre fiz cursos online e nunca tinha passado por
-                              uma experiência como esta. Vídeos e textos todos muito adequados.
-                              Em outros cursos sempre achei tudo muito ultrapassado.
-                              Aqui me senti sendo atualizada.
-                              <i class="fa fa-quote-right"></i>
-                            </p>
-                        </blockquote>
-                      <div class="carousel-caption">
-                        Fabiana Navarro da Silva Gomes<br/>
-                        Curso <a href="http://tecsaladeaula.com.br/course/tecnologia-e-educacao-o-mundo-esta-sempre-mudando/intro/">
-                        Reflexões sobre tecnologia, educação e sociedade</a>
-                      </div>
-                    </div>
-                    <div class="item">
-                        <blockquote class="testimonial">
-                            <p>
-                              <i class="fa fa-quote-left"></i>
-                              O curso me abriu muitos caminhos assim como me
-                              propiciou novos horizontes para poder otimizar os
-                              trabalhos nesse ambiente tão rico e dinâmico que
-                              é a escola.
-                                <i class="fa fa-quote-right"></i>
-                            </p>
-                        </blockquote>
-                      <div class="carousel-caption">
-                        Fabiana Manzano dos S. Lago<br/>
-                        Curso <a href="http://tecsaladeaula.com.br/course/tecnologia-e-educacao-o-mundo-esta-sempre-mudando/intro/">
-                        Reflexões sobre tecnologia, educação e sociedade</a>
-                      </div>
-                    </div>
-                    <div class="item">
-                      <blockquote class="testimonial">
-                          <p>
-                              <i class="fa fa-quote-left"></i>
-                                Eu buscava algo que pudesse fazer parte do meu
-                                acervo de material e, neste curso, pude
-                                encontrar de maneira clara e bastante objetiva.
-                                <i class="fa fa-quote-right"></i>
-                            </p>
-                        </blockquote>
-                      <div class="carousel-caption">
-                      Luciana Vasconcelos Machado<br/>
-                      Curso <a href="http://tecsaladeaula.com.br/course/objetos-de-aprendizagem/intro/">
-                      Objetos de Aprendizagem </a>
-                      </div>
-                    </div>
-                    <div class="item">
                         <blockquote class="testimonial">
                           <p>
                             <i class="fa fa-quote-left"></i>
@@ -279,37 +179,6 @@ home
                         Google News: seu jornal interativo em aula </a>
                       </div>
                     </div>
-                    <div class="item">
-                        <blockquote class="testimonial">
-                          <p>
-                            <i class="fa fa-quote-left"></i>
-                            O curso é maravilhoso, informativo, objetivo e
-                            principalmente nos dá uma visão totalmente diferente
-                            sobre o uso da tecnologia em sala de aula.
-                            <i class="fa fa-quote-right"></i>
-                          </p>
-                        </blockquote>
-                      <div class="carousel-caption">
-                        Bruno Younes<br/>
-                        Curso <a href="http://tecsaladeaula.com.br/course/como-utilizar-o-twitter-em-sala-de-aula/intro/">
-                        Como utilizar o Twitter em Sala de Aula</a>
-                      </div>
-                    </div>
-                    <div class="item">
-                        <blockquote class="testimonial">
-                          <p>
-                            <i class="fa fa-quote-left"></i>
-                            Para mim foi uma descoberta e tanto sobre o
-                            pontencial do uso do Twitter na educação!
-                            <i class="fa fa-quote-right"></i>
-                          </p>
-                        </blockquote>
-                      <div class="carousel-caption">
-                        Carlos Alberto Coelho da Silva<br/>
-                        Curso <a href="http://tecsaladeaula.com.br/course/como-utilizar-o-twitter-em-sala-de-aula/intro/">
-                        Como utilizar o Twitter em Sala de Aula</a>
-                      </div>
-                    </div>
                   </div>
 
                   <!-- Controls -->
@@ -326,42 +195,12 @@ home
                   <ol class="carousel-indicators">
                     <li data-target="#carousel-testimonials" data-slide-to="0" class="active"></li>
                     <li data-target="#carousel-testimonials" data-slide-to="1"></li>
-                    <li data-target="#carousel-testimonials" data-slide-to="2"></li>
-                    <li data-target="#carousel-testimonials" data-slide-to="3"></li>
-                    <li data-target="#carousel-testimonials" data-slide-to="4"></li>
-                    <li data-target="#carousel-testimonials" data-slide-to="5"></li>
-                    <li data-target="#carousel-testimonials" data-slide-to="6"></li>
                   </ol>
 
                 </div>
 
             </div>
         </section><!-- #how-it-works -->
-        <section>
-            <div class="apoio textcenter container">
-                <div class="row">
-                    <div class="col-md-2">
-                      <h4 class="title_midia">Parceiros e apoio</h4>
-                    </div>
-                    <div class="col-md-4">
-                      <a href="http://lisbon-challenge.com/" target="_blank">
-                        <img src="{% static 'img/lclogo.png' %}" class="img-responsive">
-                      </a>
-                    </div>
-                    <div class="col-md-2 col-md-offset-1">
-                      <a href="http://atlasmedialab.com.br/parcerias/" target="_blank">
-                        <img src="{% static 'img/atlas-logo.png' %}" class="img-responsive">
-                      </a>
-                    </div>
-                    <div class="col-md-2 col-md-offset-1">
-                      <a href="http://www.salaaberta.com.br" target="_blank">
-                        <img src="{% static 'img/salaaberta.jpg' %}" class="img-responsive">
-                      </a>
-                    </div>
-                </div>
-            </div>
-        </select>
-
         {% if in_admin %}
             <div class="modal fade" id="modalSelectCourses">
               <div class="modal-dialog">
