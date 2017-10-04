@@ -5,7 +5,7 @@ import datetime
 
 from django.core.urlresolvers import reverse_lazy
 from django.core.exceptions import PermissionDenied, ObjectDoesNotExist
-from django.http import HttpResponse
+from django.http import HttpResponse, Http404
 from django.views.generic import (DetailView, ListView, DeleteView,
                                   CreateView, UpdateView)
 from django.views.generic.base import RedirectView, View, TemplateView
@@ -106,6 +106,9 @@ class ContactView(View):
         response.status_code = status_code
 
         return response
+
+    def get(self, request):
+        raise Http404
 
 
 class GenericCourseView(DetailView):
