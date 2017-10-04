@@ -57,7 +57,7 @@
             <button class="btn btn-success">{% trans "Sign Up" %}</button>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-xs-12">
                 <hr/>
                 <p class="bottom textcenter">
@@ -65,7 +65,7 @@
                     <a href="{% provider_login_url 'facebook' method='oauth2' %}">Facebook Connect</a>
                 </p>
             </div>
-        </div>
+        </div> -->
     </form>
 {% endblock %}
 <!-- END TABLET AND DESKTOP -->
@@ -130,13 +130,13 @@
             <button class="btn btn-success btn-lg col-xs-12">{% trans "Sign Up" %}</button>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
             <hr/>
             <p class="bottom textcenter">
                 {% load socialaccount %}
                 <a href="{% provider_login_url 'facebook' method='oauth2' %}">{% trans 'Facebook connect' %}</a>
             </p>
-        </div>
+        </div> -->
 
     </form>
 {% endblock %}
