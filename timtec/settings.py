@@ -22,8 +22,8 @@ TEMPLATE_DEBUG = DEBUG
 
 SITE_ID = 1
 SITE_HOME = ''
-SITE_NAME = 'Tecnologia para Sala de Aula'
-SITE_DOMAIN = 'tecsaladeaula.com.br'
+SITE_NAME = 'Educadores Web'
+SITE_DOMAIN = 'educadoresweb.com.br'
 
 ADMINS = (
     ('anarute', 'anarute@mupi.me'),
@@ -33,10 +33,10 @@ ADMINS = (
 MANAGERS = (ADMINS[1],)
 
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
-EMAIL_HOST = 'tecsaladeaula.com.br'
-DEFAULT_FROM_EMAIL = 'contato@mupi.me'
-CONTACT_RECIPIENT_LIST = ['contato@mupi.me', ]
-EMAIL_SUPPORT = 'suporte@mupi.me'
+EMAIL_HOST = 'educadoresweb.com.br'
+DEFAULT_FROM_EMAIL = 'contato@educadoresweb.com.br'
+CONTACT_RECIPIENT_LIST = ['contato@educadoresweb.com.br', ]
+EMAIL_SUPPORT = 'contato@educadoresweb.com.br'
 EMAIL_ACTIVITIES = 'atividades@mupi.me'
 
 TERMS_ACCEPTANCE_REQUIRED = True
@@ -500,7 +500,7 @@ ACCOUNT_AUTHENTICATION_METHOD = "username_email"
 ACCOUNT_EMAIL_CONFIRMATION_EXPIRE_DAYS = 7
 ACCOUNT_EMAIL_REQUIRED = True
 ACCOUNT_EMAIL_VERIFICATION = 'optional'
-ACCOUNT_EMAIL_SUBJECT_PREFIX = "[tecsaladeaula] "
+ACCOUNT_EMAIL_SUBJECT_PREFIX = "[EducadoresWeb] "
 ACCOUNT_SIGNUP_FORM_CLASS = 'accounts.forms.SignupForm'
 SOCIALACCOUNT_EMAIL_VERIFICATION = False
 

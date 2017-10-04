@@ -1,11 +1,11 @@
-Olá! Confirmamos seu cadastro na plataforma Mupi :)
+Olá! Confirmamos seu cadastro em nossa plataforma.
+Os próximos passos que você deve realizar são:
 
-Estamos felizes por você estar aqui e termos a oportunidade de repensar juntos o uso de tecnologia na educação.
-
-Por favor, clique no link abaixo para confirmar o seu endereço de e-mail.
+1 - Clicar no link abaixo para confirmar o seu endereço de email:
 
 {{ activate_url }}
 
+2 - Inscrever-se no curso! Para isso, volte na plataforma (https://www.educadoresweb.com.br), acesse o curso e clique no botão Inscrever-se .
 
 Abraços,
-Equipe Mupi
+Equipe Educadores Web
