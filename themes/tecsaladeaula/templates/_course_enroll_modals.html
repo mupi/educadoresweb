@@ -1,7 +1,7 @@
 {% load i18n %}
 
 <!-- SUCCESS ENROLL MODAL -->
-<div class="modal fade" id="modal-subscribe-success" tabindex="-1">
+<div class="modal fade" id="modal-subscribe-successbkp" tabindex="-1">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -34,6 +34,39 @@
                 <div class="row">
                     <div class="col-sm-12 col-md-12 col-xs-12">
                         <p>Caso possua alguma dúvida, entre em contato conosco através do email <i>contato@mupi.me</i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- END SUCCESS ENROLL MODAL -->
+
+
+<!-- SUCCESS ENROLL MODAL -->
+<div class="modal fade" id="modal-subscribe-success" tabindex="-1">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h3>Agradecemos a inscrição.</h3>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p>Caso você já tenha realizado o pagamento, dentro de instantes seu acesso será liberado.</p>
+                    </div>
+                </div>
+                <!-- NEEDS FIX
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <p>O número da sua inscrição é</p>
+                        <p>{{ course.registration_number }}</p>
+                    </div>
+                </div> -->
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 col-xs-12">
+                        <p>Dúvidas?! Envie um email para <i>contato@mupi.me</i></p>
                     </div>
                 </div>
             </div>
