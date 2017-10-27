@@ -3,7 +3,7 @@ from django.contrib import admin
 from django.forms import Textarea
 from activities.admin import ModelAdmin
 from django.db import models
-from .models import Class, Course, CourseProfessor, CourseStudent, Lesson, ProfessorMessage, StudentProgress, Unit, Video
+from .models import Class, Course, CourseProfessor, CourseAuthor, CourseStudent, Lesson, ProfessorMessage, StudentProgress, Unit, Video
 
 
 class LessonInline(admin.TabularInline):
@@ -38,6 +38,9 @@ class CourseAdmin(ModelAdmin):
 class CourseProfessorAdmin(ModelAdmin):
     list_display = ('user', 'course',)
 
+class CourseAuthorAdmin(ModelAdmin):
+    list_display = ('user',)
+
 
 class VideoAdmin(ModelAdmin):
     pass
@@ -64,6 +67,7 @@ class CourseStudentAdmin(ModelAdmin):
 
 admin.site.register(Video, VideoAdmin)
 admin.site.register(CourseProfessor, CourseProfessorAdmin)
+admin.site.register(CourseAuthor, CourseAuthorAdmin)
 admin.site.register(Course, CourseAdmin)
 admin.site.register(Lesson, LessonAdmin)
 admin.site.register(Unit, UnitAdmin)
