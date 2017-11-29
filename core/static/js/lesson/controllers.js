@@ -71,7 +71,7 @@
                     $scope.section = 'video';
 
                     youtubePlayerApi.loadPlayer().then(function(player){
-                            if(player.getVideoData() &&
+                            if(player.getVideoData && player.getVideoData() &&
                                 player.getVideoData().video_id === youtube_id) return;
                             player.cueVideoById(youtube_id);
                     });
