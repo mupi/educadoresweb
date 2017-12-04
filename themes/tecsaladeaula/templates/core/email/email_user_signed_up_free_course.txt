@@ -3,7 +3,5 @@ Oi {{ username }},
 Você se inscreveu em nosso curso {{ course_name }}.
 Trazemos já aqui as boas vindas e o desejo de que você tenha bons momentos de estudo.
 
-Em breve enviaremos mais informações.
-
 Grande abraço,
 Equipe Educadores Web
